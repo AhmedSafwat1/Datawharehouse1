@@ -1,0 +1,376 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="6965a3dd-91c3-421f-8575-9977341e89da" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Promotion Dimention</ID>
+  <Name>Promotion Dimention</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2189" scrolltop="-1931" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9102" y="12859" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="PromotionDimention" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4022" height="4419" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b60f000043110000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_PromotionDimention" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2189</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-1931</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="158">
+            <Shape Id="Promotion Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Promotion Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Promotion Media Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Promotion Media Type" />
+              </Attributes>
+              <Position x="222" y="20" />
+            </Shape>
+            <Shape Id="Display Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Display Type" />
+              </Attributes>
+              <Position x="222" y="68" />
+            </Shape>
+            <Shape Id="Promotion Begin Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Promotion Begin Date" />
+              </Attributes>
+              <Position x="222" y="116" />
+            </Shape>
+            <Shape Id="Promotion End Date" Expanded="false">
+              <Attributes>
+                <Attribute Id="Promotion End Date" />
+              </Attributes>
+              <Position x="425" y="116" />
+            </Shape>
+            <Shape Id="Promotion Cost" Expanded="false">
+              <Attributes>
+                <Attribute Id="Promotion Cost" />
+              </Attributes>
+              <Position x="627" y="116" />
+            </Shape>
+            <Shape Id="Price Reduction Type" Expanded="false">
+              <Attributes>
+                <Attribute Id="Price Reduction Type" />
+              </Attributes>
+              <Position x="222" y="164" />
+            </Shape>
+            <Shape Id="Promotion Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Promotion Name" />
+              </Attributes>
+              <Position x="222" y="212" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="3e3505aa-cc70-438b-8801-49afa8ecd041">
+    <DataSourceViewID>Pos Retail DSV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="30b29280-2a85-489b-9e83-7edac21e539c">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="69f4b47c-507d-4321-921a-163b2c0547a4">
+      <ID>Promotion Key</ID>
+      <Name>Promotion Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="0938c1ab-881b-46e6-a349-f4060607478d">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="658bfe67-34da-4f4a-be8c-fefdecdd0ed3">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>promotion_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="33af9b8b-75b0-458b-a56e-9bb0bcb81eb8">
+          <AttributeID>Promotion Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Promotion Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="9c307ff2-aeda-436c-a5a3-ee082bef0196">
+          <AttributeID>Price Reduction Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Price Reduction Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="d4bfe0f7-91ec-4f21-af76-340ffab91d19">
+          <AttributeID>Promotion Begin Date</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Promotion Begin Date</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="6ff4fa34-5251-40c5-8efa-e788aa9740d4">
+          <AttributeID>Display Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Display Type</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="91cf7e6b-9aea-4a6a-9976-21814fd546f6">
+          <AttributeID>Promotion Media Type</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Promotion Media Type</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="66895969-c77c-460e-a27c-3c680de4e8b7">
+      <ID>Promotion Name</ID>
+      <Name>Promotion Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c257de17-ef6b-455e-861f-fdcfc160735b">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="73514d39-fed1-4ea8-8a1c-bb318c3f9606">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>promotion_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="55567517-704f-441a-a4d6-b03dd366bb4a">
+      <ID>Promotion Media Type</ID>
+      <Name>Promotion Media Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="c2263107-e121-44f4-8c46-2984faa1e55c">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6cbb3534-ae4d-4168-9dfd-635d992b6539">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>promotion_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ValueColumn dwd:design-time-name="965de9c1-6e08-4048-bc8d-9a2a53fbc036">
+        <DataType>Binary</DataType>
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="c351b1b4-b4ea-41cc-b73e-e0848585a4d2">
+          <TableID>dbo_PromotionDimention</TableID>
+          <ColumnID>promotion_media_type</ColumnID>
+        </Source>
+      </ValueColumn>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="ef9d8c6b-697c-416e-86fe-82de73dd8491">
+      <ID>Price Reduction Type</ID>
+      <Name>Price Reduction Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3ed682a2-add0-4fc9-b7cb-0ca7064d66a2">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e659504c-bbfd-440b-9f14-72ac9cd089cc">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>price_reduction_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="f839bdf3-5bfa-43ee-9d3e-a875f99abf39">
+      <ID>Display Type</ID>
+      <Name>Display Type</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="2e18ed74-fd6e-496a-bae3-47b18c8cad00">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5599b964-0404-4ff9-9093-856170e209f1">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>display_type</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6d22ea7e-19d2-4c75-91f6-5c3674af7930">
+      <ID>Promotion Cost</ID>
+      <Name>Promotion Cost</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="7f0f7b85-25b1-49e8-b943-12c389ac5ffc">
+          <DataType>Double</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d5ced7c1-a139-4dca-bd8d-1b7b12a6dd03">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>promotion_cost</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3cfe02df-c9e6-4d1b-b10f-44e313cd0694">
+      <ID>Promotion Begin Date</ID>
+      <Name>Promotion Begin Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="82d8e3b2-ddee-4555-a7f0-6d209b883bc3">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="6dbd24ba-c216-4144-b6d3-c13a4896df11">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>promotion_begin_date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="a64625e7-d814-47c6-8a2e-4e32ca626bcc">
+          <AttributeID>Promotion End Date</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Promotion End Date</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="6dadd3d7-1fdd-4eec-b4b3-47598ce331c7">
+      <ID>Promotion End Date</ID>
+      <Name>Promotion End Date</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="e0cd1a84-2254-4979-9ca9-2213ddb0429f">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="e40cd475-4060-4cc7-9c6d-a5e91fd95479">
+            <TableID>dbo_PromotionDimention</TableID>
+            <ColumnID>promotion_end_date</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="aa19eef0-8394-4766-88a9-75589a8a1643">
+          <AttributeID>Promotion Cost</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Promotion Cost</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="3e9b096a-5f5f-453a-b257-f90758e9c6d0">
+      <ID>Hierarchy</ID>
+      <Name>Promtion_info</Name>
+      <Levels>
+        <Level dwd:design-time-name="a4fd05a4-33c8-4dd2-81d7-2389e807f9ff">
+          <ID>Promotion Name</ID>
+          <Name>Promotion Name</Name>
+          <SourceAttributeID>Promotion Name</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="595fb2f0-5cb8-4685-be01-18138edbee11">
+          <ID>Promotion Media Type</ID>
+          <Name>Promotion Media Type</Name>
+          <SourceAttributeID>Promotion Media Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="1100cc86-d703-48e5-a5b0-07e8e614ecb0">
+          <ID>Display Type</ID>
+          <Name>Display Type</Name>
+          <SourceAttributeID>Display Type</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="470f72ee-168c-492b-84cc-4cb0bbb59775">
+          <ID>Promotion Begin Date</ID>
+          <Name>Promotion Begin Date</Name>
+          <SourceAttributeID>Promotion Begin Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="07270e78-cd4d-4df6-b06b-cc65447067c5">
+          <ID>Promotion End Date</ID>
+          <Name>Promotion End Date</Name>
+          <SourceAttributeID>Promotion End Date</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="bb39cacd-6217-4af4-bf89-0643524a72f6">
+          <ID>Price Reduction Type</ID>
+          <Name>Price Reduction Type</Name>
+          <SourceAttributeID>Price Reduction Type</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="def24471-3a36-4305-a769-2e4760326bbc">
+      <ID>Hierarchy 1</ID>
+      <Name>promtion_coast</Name>
+      <Levels>
+        <Level dwd:design-time-name="39558239-9dc6-4acd-af2b-c6681316d267">
+          <ID>Promotion Cost</ID>
+          <Name>Promotion Cost</Name>
+          <SourceAttributeID>Promotion Cost</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

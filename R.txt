@@ -1,0 +1,88 @@
+ library("RODBC")
+ library("sqldf")
+ library("GGally")
+ library("ggplot2")
+
+
+loadData<-function()
+{
+ 
+ odbChannel=odbcConnect("RSQL")
+ dataframeName=sqlFetch(odbChannel, "Cube4")
+ data<-dataframeName[,c(15,16,17,18)]
+}
+
+SelectSumBenfit<-function()
+{
+  sqldf("select sum(Benfit) from dataframeName where Production_Name = 'test1'") 
+}
+
+SelectSumTotalCost<-function()
+{
+  sqldf("select sum(TotalCostAmount) from dataframeName where Production_Name = 'test1'") 
+}
+
+SelectSumtotalsales<-function()
+{
+  sqldf("select sum(Total_sales) from dataframeName where Production_Name = 'test1'")
+}
+
+SelectProductionAndAvgG_D<-function()
+{
+  sqldf("select Production_Name,Avg(Benfit) from dataframeName where Promotion_Name = 'heroo' group by Date")
+} 
+SelectProductionAndCountPromtion<-function()
+{
+ sqldf("select Production_Name,count(Promotion_Name) from dataframeName group by Production_Name")
+}
+
+SelectShopAndBenfit<-function()
+{
+ sqldf("select Shopper_Segment ,Benfit from dataframeName where Benfit = (select max(Benfit) from dataframeName where Production_Name = 'test1')")
+}
+DrawDataProductionAndCost<-function()
+{
+  p = ggplot(dataframeName, aes(x = Production_Name, y = TotalCostAmount, fill = Production_Name)) + geom_boxplot() + theme_bw()
+  print(p)
+}
+DrawDataStoreAndBenfit<-function()
+{
+  p = ggplot(dataframeName, aes(x = Store_Name, y = Benfit, fill = Store_Name)) + geom_boxplot() + theme_bw()
+  print(p)
+}
+DrawDataCor_CostSalesBenfitQuanty<-function()
+{
+  M_cor = cor(data)
+  print(M_cor )
+  heatmap(M_cor)
+}
+DrawDataCor2_CostSalesBenfitQuanty<-function()
+{
+ library(GGally)
+ ggpairs(data)
+}
+
+
+
+//////
+
+
+DrawDataHostagramCostSalesBenfit()
+{
+ par(mfrow = c(2,2))
+ colnm = names(data2)
+ for(i in 1:4) {
+ hist(data[[i]], col = 'deepskyblue3', main = sprintf('Histogram of %s', colnm[i]))
+  }
+  par(mfrow = c(1,1))
+}
+
+
+par(mfrow = c(2,2))
+colnm = names(data)
+for(i in 1:4) {
+hist(data[[i]], col = 'deepskyblue3', main = sprintf('Histogram of %s', colnm[i]))
+}
+par(mfrow = c(1,1))
+
+p = ggplot(dataframeName, aes(x =  Sales_Quentity, fill = Promotion_Name)) + geom_histogram() + facet_grid(Promotion_Name ~ ., scales = 'free') + theme_bw()

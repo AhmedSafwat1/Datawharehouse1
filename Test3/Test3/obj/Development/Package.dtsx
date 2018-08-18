@@ -1,0 +1,1671 @@
+<?xml version="1.0"?>
+<DTS:Executable
+  DTS:refId="Package" xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ExecutableType="SSIS.Package.3"
+  DTS:CreatorName="Safwat-PC\SAFWAT"
+  DTS:CreatorComputerName="SAFWAT-PC"
+  DTS:CreationDate="5/3/2018 11:19:29 AM"
+  DTS:PackageType="5"
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{DFF3B80C-34FE-4DDA-8336-4EF39EE2697F}"
+  DTS:LastModifiedProductVersion="11.0.2100.60"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:DTSID="{C31D4E8C-6821-4FFB-8F4B-986981B0D6E7}"
+  DTS:CreationName="SSIS.Package.3">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">6</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010"
+      DTS:DTSID="{E33330D2-EED5-4B7F-93B4-7F2FBCD1DAAE}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Provider=MSOLAP.5;Integrated Security=SSPI;Extended Properties=Format=Tabular;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality"
+      DTS:DTSID="{A745A513-8982-49AC-AE41-44033DCDB37C}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=OlapDataPosReality;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 1]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 1"
+      DTS:DTSID="{352A4C2F-B265-4F2E-AD32-605AB5EC664B}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=OlapDataPosReality;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 2]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 2"
+      DTS:DTSID="{882CDCBF-9321-4DCB-A5B5-47515FD94669}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=OlapDataPosReality;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 3]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 3"
+      DTS:DTSID="{395100B3-9592-4960-AB35-511008F8E31A}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=OlapDataPosReality;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise"
+      DTS:DTSID="{5C069604-C3F0-442B-9F9A-0AA155ABA90B}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=PosRetailDataAnalysise;Provider=MSOLAP.5;Integrated Security=SSPI;Extended Properties=Format=Tabular;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise 1]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise 1"
+      DTS:DTSID="{EFEE1B3B-984A-40D1-B644-1B8851FC0FFB}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=PosRetailDataAnalysise;Provider=MSOLAP.5;Integrated Security=SSPI;Extended Properties=Format=Tabular;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise 2]"
+      DTS:ObjectName="SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise 2"
+      DTS:DTSID="{4758AE28-1397-4762-8FA6-5DE08391780E}"
+      DTS:CreationName="OLEDB">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=SAFWAT-PC\MSSQLSERVER2010;Initial Catalog=PosRetailDataAnalysise;Provider=MSOLAP.5;Integrated Security=SSPI;Extended Properties=Format=Tabular;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Data Flow Task"
+      DTS:ExecutableType="SSIS.Pipeline.3"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) 2007 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Data Flow Task"
+      DTS:DTSID="{5F2FC15E-AD30-44EA-89DB-06EEF5F5B3C3}"
+      DTS:Description="Data Flow Task"
+      DTS:CreationName="SSIS.Pipeline.3">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Data Flow Task\Data Conversion"
+              name="Data Conversion"
+              componentClassID="{62B1106C-7DB8-4EC8-ADD6-4C664DFFC54A}"
+              description="Data Conversion"
+              usesDispositions="true"
+              contactInfo="Data Conversion;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  name="Data Conversion Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      cachedName="[Date Dimension].[Date].[Date].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      cachedName="[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      cachedName="[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      cachedName="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      cachedName="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      cachedName="[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      cachedName="[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      cachedName="[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      cachedName="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      cachedName="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      cachedName="[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      cachedName="[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      cachedName="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      cachedName="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Measures].[TotalSalesAmount]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalSalesAmount]]"
+                      cachedName="[Measures].[TotalSalesAmount]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Measures].[TotalCostAmount]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalCostAmount]]"
+                      cachedName="[Measures].[TotalCostAmount]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Measures].[Sales Quentity]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Sales Quentity]]"
+                      cachedName="[Measures].[Sales Quentity]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input].Columns[[Measures].[Benfit]]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Benfit]]"
+                      cachedName="[Measures].[Benfit]"
+                      cachedDataType="wstr"
+                      cachedLength="255" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+                  name="Data Conversion Output"
+                  exclusionGroup="1"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      name="Copy of [Date Dimension].[Date].[Date].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      name="Copy of [Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      name="Copy of [Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      name="Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      name="Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      name="Copy of [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      name="Copy of [Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      name="Copy of [Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="str"
+                      codePage="1252"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[TotalSalesAmount]]"
+                      name="[Measures].[TotalSalesAmount]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[TotalSalesAmount]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalSalesAmount]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[TotalCostAmount]]"
+                      name="[Measures].[TotalCostAmount]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[TotalCostAmount]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalCostAmount]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[Sales Quentity]]"
+                      name="[Measures].[Sales Quentity]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[Sales Quentity]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Sales Quentity]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[Benfit]]"
+                      name="[Measures].[Benfit]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[Benfit]]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          name="SourceInputColumnLineageID"
+                          dataType="System.Int32"
+                          description="Specifies the input column used as the source of data for the conversion."
+                          containsID="true">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Benfit]]}</property>
+                        <property
+                          name="FastParse"
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines.">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output]"
+                  name="Data Conversion Error Output"
+                  exclusionGroup="1"
+                  synchronousInputId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Destination"
+              name="OLE DB Destination"
+              componentClassID="{4ADA7EAA-136C-4215-8098-D7A7C27FC0D1}"
+              description="OLE DB Destination"
+              usesDispositions="true"
+              version="4"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4">
+              <properties>
+                <property
+                  name="CommandTimeout"
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out.">0</property>
+                <property
+                  name="OpenRowset"
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset.">[dbo].[Cube4]</property>
+                <property
+                  name="OpenRowsetVariable"
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."></property>
+                <property
+                  name="SqlCommand"
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  name="DefaultCodePage"
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source.">1252</property>
+                <property
+                  name="AlwaysUseDefaultCodePage"
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data.">false</property>
+                <property
+                  name="AccessMode"
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  typeConverter="AccessMode">0</property>
+                <property
+                  name="FastLoadKeepIdentity"
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on.">false</property>
+                <property
+                  name="FastLoadKeepNulls"
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on.">false</property>
+                <property
+                  name="FastLoadOptions"
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."></property>
+                <property
+                  name="FastLoadMaxInsertCommitSize"
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on.">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Destination.Connections[OleDbConnection]"
+                  name="OleDbConnection"
+                  description="The OLE DB runtime connection used to access the database."
+                  connectionManagerID="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 3]"
+                  connectionManagerRefId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.OlapDataPosReality 3]" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="OLE DB Destination Input"
+                  hasSideEffects="true"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      cachedName="Copy of [Date Dimension].[Date].[Date].[MEMBER_CAPTION]"
+                      cachedDataType="dbDate" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Clerk_Job_Grad]"
+                      cachedName="Copy of [Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Clerk_Name]"
+                      cachedName="Copy of [Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shopper_Zipcode]"
+                      cachedName="Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shopper_Name]"
+                      cachedName="Copy of [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shopper_Segment]"
+                      cachedName="Copy of [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Production_Name]"
+                      cachedName="Copy of [Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Copy of [Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[Copy of [Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Promotion_Cost]"
+                      cachedName="Copy of [Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Promotion_Name]"
+                      cachedName="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Media_Type]"
+                      cachedName="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Store_Number]"
+                      cachedName="[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Store_Name]"
+                      cachedName="[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Part_Segment]"
+                      cachedName="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shifft]"
+                      cachedName="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]"
+                      cachedDataType="str"
+                      cachedLength="255"
+                      cachedCodepage="1252" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Measures].[TotalCostAmount]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[TotalCostAmount]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalCostAmount]"
+                      cachedName="[Measures].[TotalCostAmount]"
+                      cachedDataType="i4" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Measures].[Sales Quentity]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[Sales Quentity]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sales_Quentity]"
+                      cachedName="[Measures].[Sales Quentity]"
+                      cachedDataType="i4" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Measures].[TotalSalesAmount]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[TotalSalesAmount]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_sales]"
+                      cachedName="[Measures].[TotalSalesAmount]"
+                      cachedDataType="i4" />
+                    <inputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[[Measures].[Benfit]]"
+                      lineageId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output].Columns[[Measures].[Benfit]]"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Benfit]"
+                      cachedName="[Measures].[Benfit]"
+                      cachedDataType="i4" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Date]"
+                      name="Date"
+                      dataType="dbDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Clerk_Job_Grad]"
+                      name="Clerk_Job_Grad"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Clerk_Name]"
+                      name="Clerk_Name"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shopper_Zipcode]"
+                      name="Shopper_Zipcode"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shopper_Name]"
+                      name="Shopper_Name"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shopper_Segment]"
+                      name="Shopper_Segment"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Production_Name]"
+                      name="Production_Name"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Promotion_Cost]"
+                      name="Promotion_Cost"
+                      dataType="str"
+                      length="50"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Promotion_Name]"
+                      name="Promotion_Name"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Media_Type]"
+                      name="Media_Type"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Store_Number]"
+                      name="Store_Number"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Store_Name]"
+                      name="Store_Name"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Part_Segment]"
+                      name="Part_Segment"
+                      dataType="str"
+                      length="50"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Shifft]"
+                      name="Shifft"
+                      dataType="str"
+                      length="255"
+                      codePage="1252" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TotalCostAmount]"
+                      name="TotalCostAmount"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Sales_Quentity]"
+                      name="Sales_Quentity"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Total_sales]"
+                      name="Total_sales"
+                      dataType="i4" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Benfit]"
+                      name="Benfit"
+                      dataType="i4" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  name="OLE DB Destination Error Output"
+                  exclusionGroup="1"
+                  synchronousInputId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Data Flow Task\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source"
+              name="OLE DB Source"
+              componentClassID="{165A526D-D5DE-47FF-96A6-F8274C19826B}"
+              description="OLE DB Source"
+              usesDispositions="true"
+              version="7"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7">
+              <properties>
+                <property
+                  name="CommandTimeout"
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out.">0</property>
+                <property
+                  name="OpenRowset"
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."></property>
+                <property
+                  name="OpenRowsetVariable"
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."></property>
+                <property
+                  name="SqlCommand"
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">SELECT NON EMPTY { [Measures].[TotalSalesAmount], [Measures].[TotalCostAmount], [Measures].[Sales Quentity], [Measures].[Benfit] } ON COLUMNS, NON EMPTY { ([Date Dimension].[Date].[Date].ALLMEMBERS * [Clerk Dimention].[clerk_info].[Clerk Name].ALLMEMBERS * [Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].ALLMEMBERS * [Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].ALLMEMBERS * [Production Dimention].[Production Name].[Production Name].ALLMEMBERS * [Promotion Dimention].[promtion_coast].[Promotion Cost].ALLMEMBERS * [Promotion Dimention].[Promtion_info].[Promotion Media Type].ALLMEMBERS * [Store Manager].[Store_info].[Store Name].ALLMEMBERS * [Time Of Day Dimention].[Shift_info].[Shifft].ALLMEMBERS ) } DIMENSION PROPERTIES MEMBER_CAPTION, MEMBER_UNIQUE_NAME ON ROWS FROM [Pos Retail DSV] CELL PROPERTIES VALUE, BACK_COLOR, FORE_COLOR, FORMATTED_VALUE, FORMAT_STRING, FONT_NAME, FONT_SIZE, FONT_FLAGS</property>
+                <property
+                  name="SqlCommandVariable"
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."></property>
+                <property
+                  name="DefaultCodePage"
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source.">1252</property>
+                <property
+                  name="AlwaysUseDefaultCodePage"
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data.">false</property>
+                <property
+                  name="AccessMode"
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  typeConverter="AccessMode">2</property>
+                <property
+                  name="ParameterMapping"
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
+                  name="OleDbConnection"
+                  description="The OLE DB runtime connection used to access the database."
+                  connectionManagerID="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise 2]"
+                  connectionManagerRefId="Package.ConnectionManagers[SAFWAT-PC\MSSQLSERVER2010.PosRetailDataAnalysise 2]" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      name="[Date Dimension].[Date].[Date].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      name="[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalSalesAmount]]"
+                      name="[Measures].[TotalSalesAmount]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalSalesAmount]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[TotalSalesAmount]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalCostAmount]]"
+                      name="[Measures].[TotalCostAmount]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[TotalCostAmount]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[TotalCostAmount]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Sales Quentity]]"
+                      name="[Measures].[Sales Quentity]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Sales Quentity]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[Sales Quentity]]" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Benfit]]"
+                      name="[Measures].[Benfit]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[[Measures].[Benfit]]"
+                      length="255"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      truncationRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[Benfit]]" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      name="[Date Dimension].[Date].[Date].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Date Dimension].[Date].[Date].[MEMBER_UNIQUE_NAME]]"
+                      name="[Date Dimension].[Date].[Date].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_UNIQUE_NAME]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_UNIQUE_NAME]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_UNIQUE_NAME]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_UNIQUE_NAME]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_UNIQUE_NAME]]"
+                      name="[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      name="[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Production Dimention].[Production Name].[Production Name].[MEMBER_UNIQUE_NAME]]"
+                      name="[Production Dimention].[Production Name].[Production Name].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_UNIQUE_NAME]]"
+                      name="[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_UNIQUE_NAME]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_UNIQUE_NAME]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Store Manager].[Store_info].[Store Number].[MEMBER_UNIQUE_NAME]]"
+                      name="[Store Manager].[Store_info].[Store Number].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Store Manager].[Store_info].[Store Name].[MEMBER_UNIQUE_NAME]]"
+                      name="[Store Manager].[Store_info].[Store Name].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_UNIQUE_NAME]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_UNIQUE_NAME]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_UNIQUE_NAME]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[TotalSalesAmount]]"
+                      name="[Measures].[TotalSalesAmount]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[TotalCostAmount]]"
+                      name="[Measures].[TotalCostAmount]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[Sales Quentity]]"
+                      name="[Measures].[Sales Quentity]"
+                      dataType="wstr"
+                      length="255" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[[Measures].[Benfit]]"
+                      name="[Measures].[Benfit]"
+                      dataType="wstr"
+                      length="255" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  name="OLE DB Source Error Output"
+                  isErrorOut="true">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      name="[Date Dimension].[Date].[Date].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Date Dimension].[Date].[Date].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Job Grade].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      name="[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Clerk Dimention].[clerk_info].[Clerk Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Zipcode].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Frequent Shopper Dimention].[shopper_info].[Frequent Shopper Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      name="[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Frequent Shopper Dimention].[position_more].[Frequent Shopper Segment].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      name="[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Production Dimention].[Production Name].[Production Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Promotion Dimention].[promtion_coast].[Promotion Cost].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      name="[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Promotion Dimention].[Promtion_info].[Promotion Media Type].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Store Manager].[Store_info].[Store Number].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      name="[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Store Manager].[Store_info].[Store Name].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Time Of Day Dimention].[Shift_info].[Day Part Segment].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      name="[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Time Of Day Dimention].[Shift_info].[Shifft].[MEMBER_CAPTION]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[TotalSalesAmount]]"
+                      name="[Measures].[TotalSalesAmount]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[TotalSalesAmount]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[TotalCostAmount]]"
+                      name="[Measures].[TotalCostAmount]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[TotalCostAmount]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[Sales Quentity]]"
+                      name="[Measures].[Sales Quentity]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[Sales Quentity]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[Benfit]]"
+                      name="[Measures].[Benfit]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[[Measures].[Benfit]]"
+                      length="255"
+                      dataType="wstr" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Data Flow Task.Paths[Data Conversion Output]"
+              name="Data Conversion Output"
+              startId="Package\Data Flow Task\Data Conversion.Outputs[Data Conversion Output]"
+              endId="Package\Data Flow Task\OLE DB Destination.Inputs[OLE DB Destination Input]" />
+            <path
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              name="OLE DB Source Output"
+              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Data Conversion.Inputs[Data Conversion Input]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="sql11">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssge="clr-namespace:Microsoft.SqlServer.Graph.Extended;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+        <NodeLayout
+          Size="150,42"
+          Id="Package\Data Flow Task"
+          TopLeft="383,164" />
+        <AnnotationLayout
+          Text="Get Tabular Data From Cube"
+          ParentId="Package"
+          Size="227,60"
+          Id="c3c967e3-2288-4a9c-954a-9b42eb5752ba"
+          TopLeft="334,92">
+          <AnnotationLayout.FontInfo>
+            <mssge:FontInfo
+              Family="Times New Roman"
+              Size="15.75"
+              Color="#FF000000"
+              Weight="Bold">
+              <mssge:FontInfo.TextDecorations>
+                <av:TextDecorationCollection />
+              </mssge:FontInfo.TextDecorations>
+            </mssge:FontInfo>
+          </AnnotationLayout.FontInfo>
+        </AnnotationLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Data Flow Task">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="149,42"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="383,116" />
+        <NodeLayout
+          Size="155,42"
+          Id="Package\Data Flow Task\Data Conversion"
+          TopLeft="382,203" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="458.5,158">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="170,42"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="375,290" />
+        <EdgeLayout
+          Id="Package\Data Flow Task.Paths[Data Conversion Output]"
+          TopLeft="459.75,245">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{x:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

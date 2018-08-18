@@ -1,0 +1,342 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="3a5c736d-50c9-4fef-a1e7-fc182c35ea99" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Frequent Shopper Dimention</ID>
+  <Name>Frequent Shopper Dimention</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-1686" scrolltop="-2143" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9102" y="12859" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="FrequentShopperDimention" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="4630" height="3995" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000161200009b0f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_FrequentShopperDimention" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-1686</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2143</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="187">
+            <Shape Id="Frequent Shopper Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper Key" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Frequent Shopper City" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper City" />
+              </Attributes>
+              <Position x="258" y="20" />
+            </Shape>
+            <Shape Id="Frequent Shopper Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper Name" />
+              </Attributes>
+              <Position x="258" y="68" />
+            </Shape>
+            <Shape Id="Frequent Shopper Addres" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper Addres" />
+              </Attributes>
+              <Position x="258" y="116" />
+            </Shape>
+            <Shape Id="Frequent Shopper Segment" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper Segment" />
+              </Attributes>
+              <Position x="258" y="164" />
+            </Shape>
+            <Shape Id="Frequent Shopper Zipcode" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper Zipcode" />
+              </Attributes>
+              <Position x="258" y="212" />
+            </Shape>
+            <Shape Id="Frequent Shopper State" Expanded="false">
+              <Attributes>
+                <Attribute Id="Frequent Shopper State" />
+              </Attributes>
+              <Position x="258" y="260" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="1e3ff995-4f49-4038-8b0c-7a4c292e75c2">
+    <DataSourceViewID>Pos Retail DSV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="29e3c7c7-3963-478c-88f1-0801f2f9857d">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="c26ca68b-e7b6-4bbd-bbe4-786818e5ab73">
+      <ID>Frequent Shopper Key</ID>
+      <Name>Frequent Shopper Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="3458b6ac-c0c5-4705-b6d8-9717ded413e2">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="0c5ec64d-3712-4d2c-9d10-46efd5d84a11">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="f4243963-c63f-488d-95f2-b7e2c922169d">
+          <AttributeID>Frequent Shopper State</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Frequent Shopper State</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="55a56bab-a271-48b7-8533-bcca47c9795b">
+          <AttributeID>Frequent Shopper Zipcode</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Frequent Shopper Zipcode</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="5d8af073-d626-429f-a437-c3564897ad26">
+          <AttributeID>Frequent Shopper Segment</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Frequent Shopper Segment</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="bfdecf49-e2b4-46a1-87f9-bdb153af9567">
+          <AttributeID>Frequent Shopper Addres</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Frequent Shopper Addres</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="addf87e8-3174-4407-8d77-b4b384bd257c">
+          <AttributeID>Frequent Shopper Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Frequent Shopper Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ee126fdc-d784-4ebe-b324-9246b6ec546d">
+          <AttributeID>Frequent Shopper City</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Frequent Shopper City</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="3250c08a-91ab-41ee-a1da-6788fd5835ac">
+      <ID>Frequent Shopper Name</ID>
+      <Name>Frequent Shopper Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="4aa0da71-81c2-4482-8796-cb00b4c41d1a">
+          <DataType>WChar</DataType>
+          <DataSize>50</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2860de1d-b76d-4d95-80f7-ab91e64ce1ed">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="d6b6dcf0-39f7-481a-8c9c-f17bb5400e6f">
+      <ID>Frequent Shopper Addres</ID>
+      <Name>Frequent Shopper Addres</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b6e43d26-7fcf-495a-8052-6b22e8d704a3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="5df57089-b860-4ec7-a8ac-670d8c3d7631">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_addres</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="00f615a1-6313-410e-a654-b613390dcfd2">
+      <ID>Frequent Shopper City</ID>
+      <Name>Frequent Shopper City</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1db8ccad-1d0a-4b6a-b846-94b8735874f0">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="124083c6-0b0c-41e3-b68f-4e3943a756f8">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_city</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e8c097dc-4ab4-4866-8eb2-9b3a2576535a">
+      <ID>Frequent Shopper State</ID>
+      <Name>Frequent Shopper State</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="05b79535-50b0-4b6b-8386-4f5149569847">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="899a239f-69d7-4208-a8f2-ec5cd6a207b7">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_state</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="72adf634-d5b6-40b3-9c4b-c6fb01a93b23">
+      <ID>Frequent Shopper Zipcode</ID>
+      <Name>Frequent Shopper Zipcode</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="00645f75-b5e7-42ba-95dc-6a1fcba68818">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="2b4e085b-ebb2-4a41-a7d1-b35a68add5f6">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_zipcode</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="756c3d21-65fe-42ee-927d-e7a97ad28716">
+      <ID>Frequent Shopper Segment</ID>
+      <Name>Frequent Shopper Segment</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="d1f4a6d3-13f7-4129-ad73-9332a855965b">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="fc8ee1e8-ab6f-4feb-9704-1dcaa986d23b">
+            <TableID>dbo_FrequentShopperDimention</TableID>
+            <ColumnID>frequent_shopper_segment</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="4632c9c2-06b3-447f-be80-3345515ef605">
+      <ID>Hierarchy</ID>
+      <Name>position_public</Name>
+      <Levels>
+        <Level dwd:design-time-name="41bdac97-9528-43d9-8fbb-da26bd21b791">
+          <ID>Frequent Shopper State</ID>
+          <Name>Frequent Shopper State</Name>
+          <SourceAttributeID>Frequent Shopper State</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="b8484563-4d28-4fc5-9910-215062f58c5a">
+          <ID>Frequent Shopper City</ID>
+          <Name>Frequent Shopper City</Name>
+          <SourceAttributeID>Frequent Shopper City</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="468ab2c9-8990-4c9f-ae0a-ce2dab9823a0">
+      <ID>Hierarchy 1</ID>
+      <Name>position_more</Name>
+      <Levels>
+        <Level dwd:design-time-name="e5f91edf-5edc-4cb3-9d6d-6db0e9f37f9b">
+          <ID>Frequent Shopper Segment</ID>
+          <Name>Frequent Shopper Segment</Name>
+          <SourceAttributeID>Frequent Shopper Segment</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="825e92b3-5906-4d15-ac8b-f000f417b2c0">
+          <ID>Frequent Shopper Addres</ID>
+          <Name>Frequent Shopper Addres</Name>
+          <SourceAttributeID>Frequent Shopper Addres</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+    <Hierarchy dwd:design-time-name="f7d664dc-5994-45a2-a499-e60921f3d375">
+      <ID>Hierarchy 2</ID>
+      <Name>shopper_info</Name>
+      <Levels>
+        <Level dwd:design-time-name="49a970a3-9cf7-4436-b61e-69839d5bae1e">
+          <ID>Frequent Shopper Zipcode</ID>
+          <Name>Frequent Shopper Zipcode</Name>
+          <SourceAttributeID>Frequent Shopper Zipcode</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="74358ede-cb6f-420a-89f3-906d24d052f7">
+          <ID>Frequent Shopper Name</ID>
+          <Name>Frequent Shopper Name</Name>
+          <SourceAttributeID>Frequent Shopper Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>

@@ -1,0 +1,25 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="1cbe9c4f-75a3-4056-a4bc-edbe3f1623fd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Pos Retail DSV</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Pos Retail Sales Transaction Fact</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="30daa461-5d9c-43fe-b3ce-c220dfe59add">
+          <ID>Pos Retail Sales Transaction Fact</ID>
+          <Name>Pos Retail Sales Transaction Fact</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="024f7604-f34f-422d-94ee-a4491bf69768">
+            <DataSourceViewID>Pos Retail DSV</DataSourceViewID>
+            <TableID>dbo_PosRetailSalesTransactionFact</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>

@@ -1,0 +1,237 @@
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="90e5f561-849f-4944-9b32-2e94f669b3c5" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Clerk Dimention</ID>
+  <Name>Clerk Dimention</Name>
+  <CreatedTimestamp>0001-01-01T08:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T08:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="3" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2374" scrolltop="-2566" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9102" y="12859" backcolor="15334399" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01000000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge.3" tooltip="ClerkDimention" left="20" top="0" logicalid="2" controlid="1" masterid="0" hint1="0" hint2="0" width="3254" height="3149" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="00080000b60c00004d0c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_ClerkDimention" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-2374</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>-2566</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>100</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ARDiagramLayout</Name>
+      <Value>
+        <DiagramLayout ZoomPercent="100" ViewPortX="0" ViewPortY="0" xmlns="">
+          <Shapes NodeWidth="133">
+            <Shape Id="Clerk Key" Expanded="false">
+              <Attributes>
+                <Attribute Id="Clerk Key" />
+                <Attribute Id="Clerk Supervisor" />
+                <Attribute Id="Date Of Hire" />
+              </Attributes>
+              <Position x="20" y="20" />
+            </Shape>
+            <Shape Id="Clerk Job Grade" Expanded="false">
+              <Attributes>
+                <Attribute Id="Clerk Job Grade" />
+              </Attributes>
+              <Position x="191" y="20" />
+            </Shape>
+            <Shape Id="Clerk Name" Expanded="false">
+              <Attributes>
+                <Attribute Id="Clerk Name" />
+              </Attributes>
+              <Position x="191" y="68" />
+            </Shape>
+          </Shapes>
+        </DiagramLayout>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T08:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="8388e5e1-9e84-4d46-aad6-738b01f4fab0">
+    <DataSourceViewID>Pos Retail DSV</DataSourceViewID>
+  </Source>
+  <ErrorConfiguration dwd:design-time-name="4569447f-997f-49b2-8e77-d673228d9cc4">
+    <KeyNotFound>ReportAndStop</KeyNotFound>
+    <KeyDuplicate>ReportAndStop</KeyDuplicate>
+    <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
+  </ErrorConfiguration>
+  <CurrentStorageMode>Molap</CurrentStorageMode>
+  <Attributes>
+    <Attribute dwd:design-time-name="e6baf68d-75b3-4e79-83d3-c9a9f41fb7d9">
+      <ID>Clerk Key</ID>
+      <Name>Clerk Key</Name>
+      <Usage>Key</Usage>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="baec1fa3-901a-4f1f-b261-3fff1767c0ab">
+          <DataType>Integer</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="cd637f01-7702-4b30-9a97-03c686f39166">
+            <TableID>dbo_ClerkDimention</TableID>
+            <ColumnID>clerk_key</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <AttributeRelationships>
+        <AttributeRelationship dwd:design-time-name="26ddbd00-a281-47a9-b236-8e101cf7937f">
+          <AttributeID>Clerk Name</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Clerk Name</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="c2544e62-623e-4444-96e0-6fe236f8ef88">
+          <AttributeID>Clerk Supervisor</AttributeID>
+          <Name>Clerk Supervisor</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="ce89b5d4-056d-47b1-a2dd-e84b6c97d315">
+          <AttributeID>Date Of Hire</AttributeID>
+          <Name>Date Of Hire</Name>
+        </AttributeRelationship>
+        <AttributeRelationship dwd:design-time-name="2c70d371-4811-43c2-9c7c-95e303baaebf">
+          <AttributeID>Clerk Job Grade</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
+          <Name>Clerk Job Grade</Name>
+        </AttributeRelationship>
+      </AttributeRelationships>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="2df03853-9682-4e85-8f1e-e0f7514ae5ed">
+      <ID>Clerk Name</ID>
+      <Name>Clerk Name</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="b004f060-9a4f-43c7-8ed3-f2b6c8589b2d">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="d0f89db0-5e96-454e-94ba-a5c780478896">
+            <TableID>dbo_ClerkDimention</TableID>
+            <ColumnID>clerk_name</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="051290d5-719c-4c55-85a8-f727ce5710c7">
+      <ID>Clerk Job Grade</ID>
+      <Name>Clerk Job Grade</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="1d0c4d6c-d137-4f3f-b358-eee4a28f84d3">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="f6d3c626-1a41-4993-9bc9-3b3d7dd96eb9">
+            <TableID>dbo_ClerkDimention</TableID>
+            <ColumnID>clerk_job_grade</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e3c9fd96-aa54-46f9-b3f1-08677fef5256">
+      <ID>Clerk Supervisor</ID>
+      <Name>Clerk Supervisor</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="9aed0428-fba2-4dc7-b802-7aef2457acc7">
+          <DataType>WChar</DataType>
+          <DataSize>255</DataSize>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="a28cf80f-4fc6-4cd3-9ce0-55f4df35c08c">
+            <TableID>dbo_ClerkDimention</TableID>
+            <ColumnID>clerk_supervisor</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+    <Attribute dwd:design-time-name="e471007f-bc13-4c9a-af9b-f2f93b4f7d2d">
+      <ID>Date Of Hire</ID>
+      <Name>Date Of Hire</Name>
+      <KeyColumns>
+        <KeyColumn dwd:design-time-name="bdf42728-699f-40ca-8f6c-e825e23f77ae">
+          <DataType>Date</DataType>
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="3269300c-4ccc-47f0-ab02-9f86c4a8a29a">
+            <TableID>dbo_ClerkDimention</TableID>
+            <ColumnID>date_of_hire</ColumnID>
+          </Source>
+        </KeyColumn>
+      </KeyColumns>
+      <OrderBy>Key</OrderBy>
+      <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+      <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
+    </Attribute>
+  </Attributes>
+  <Hierarchies>
+    <Hierarchy dwd:design-time-name="a4b5ee84-53b7-4293-af31-726b86f47de6">
+      <ID>Hierarchy</ID>
+      <Name>clerk_info</Name>
+      <Levels>
+        <Level dwd:design-time-name="41fa7fbc-dc06-45cd-bdc1-07daed936f95">
+          <ID>Clerk Job Grade</ID>
+          <Name>Clerk Job Grade</Name>
+          <SourceAttributeID>Clerk Job Grade</SourceAttributeID>
+        </Level>
+        <Level dwd:design-time-name="23545392-66fc-4d11-b345-bfa360871678">
+          <ID>Clerk Name</ID>
+          <Name>Clerk Name</Name>
+          <SourceAttributeID>Clerk Name</SourceAttributeID>
+        </Level>
+      </Levels>
+    </Hierarchy>
+  </Hierarchies>
+  <ddl300:ProcessingState>Unprocessed</ddl300:ProcessingState>
+</Dimension>
